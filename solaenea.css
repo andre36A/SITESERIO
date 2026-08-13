@@ -1,0 +1,179 @@
+/* ===== RESET E CONFIGURAÇÕES GLOBAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    -webkit-user-drag: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f8;
+}
+
+/* ===== CONTAINER PADRÃO ===== */
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* ===== HEADER PRINCIPAL ===== */
+.header {
+    width: 100%;
+}
+
+/* ===== TOP BAR (BARRA VERMELHA SUPERIOR) ===== */
+.top-bar {
+    height: 50px;
+    background-color: #8e0d12;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar-content {
+    height: 100%;
+    width: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome-camara {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.top-links a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* ===== ÁREA DAS IMAGENS (FAIXADA + LOGO SOBREPOSTA) ===== */
+.areaheaderimgs {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+/* Imagem de fundo (faixada) */
+.areaheaderimgs .logo-area {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center 73%;
+}
+
+.logo-area {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+/* Logo da Câmara sobreposta (primeira imagem) */
+.areaheaderimgs img:first-child {
+    position: absolute;
+    top: 50%;
+    left: 390px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 254px;
+    height: 120px;
+}
+
+.logo-area .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== BARRA DE NAVEGAÇÃO ===== */
+.nav-bar {
+    height: 50px;
+    background-color: #9b0e14;
+    color: white;
+    z-index: 999;
+    position: sticky;
+    top: 43px;
+}
+
+.nav-content {
+    height: 100%;
+    width: 76%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.nav-content a:hover {
+    opacity: 0.8;
+}
+
+.home {
+    font-size: 18px !important;
+}
+
+/* ===== BANNER PRINCIPAL ===== */
+.banner {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: #24343b;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo {
+    width: 1200px;
+    max-width: 90%;
+    margin: 50px auto;
+    min-height: 1000px;
+}
+
+.conteúdo h2 {
+    margin-bottom: 30px;
+}
+
+/* ===== CARDS (NOTÍCIAS) ===== */
+.cards {
+    height: 250px;
+    flex: 1;
+}
+
+.card {
+    height: 250px;
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
