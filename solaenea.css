@@ -1,4 +1,7 @@
-/* ===== RESET E CONFIGURAÇÕES GLOBAIS ===== */
+/* =========================================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,22 +15,35 @@ body {
     background-color: #f5f6f8;
 }
 
-/* ===== CONTAINER PADRÃO ===== */
+
+/* =========================================================
+   CONTAINER PADRÃO
+========================================================= */
+
 .container {
     width: 1200px;
     max-width: 90%;
     margin: 0 auto;
 }
 
-/* ===== HEADER PRINCIPAL ===== */
+
+/* =========================================================
+   HEADER PRINCIPAL
+========================================================= */
+
 .header {
     width: 100%;
 }
 
-/* ===== TOP BAR (BARRA VERMELHA SUPERIOR) ===== */
+
+/* =========================================================
+   TOP BAR — BARRA SUPERIOR
+========================================================= */
+
 .top-bar {
     height: 50px;
-    background-color: #8e0d12;
+    background-color: rgb(131, 19, 23);
+    border-bottom: 5px solid #971419;
     color: white;
     position: sticky;
     top: 0;
@@ -35,17 +51,99 @@ body {
 }
 
 .top-bar-content {
-    height: 100%;
     width: 76%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
+/* ---------- Dropdown ---------- */
+
+.dropdown {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown > a,
+.tran,
+.home {
+    height: calc(100% - 12px);
+    margin: 6px 4px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.dropdown > a:hover,
+.tran:hover,
+.home:hover {
+    background-color: #7a1015;
+    opacity: 1;
+}
+
+
+/* ---------- Menu Dropdown ---------- */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    padding: 10px 0;
+    background-color: rgb(131, 19, 23);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: white;
+    color: rgb(131, 19, 23);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s;
+}
+
+
+/* ---------- Nome da Câmara ---------- */
+
 .nome-camara {
     font-size: 13px;
     font-weight: 500;
 }
+
+.nome-camara a {
+    text-decoration: none;
+    color: white;
+}
+
+.nome-camara a:hover{
+    font-weight: 900;
+}
+
+
+/* ---------- Links da Top Bar ---------- */
 
 .top-links {
     display: flex;
@@ -59,7 +157,25 @@ body {
     text-decoration: none;
 }
 
-/* ===== ÁREA DAS IMAGENS (FAIXADA + LOGO SOBREPOSTA) ===== */
+.top-links a i {
+    margin-right: 5px;
+}
+
+.top-links .fa-brands {
+    color: white;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.top-links .fa-brands:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   ÁREA DAS IMAGENS — FAIXADA + LOGO
+========================================================= */
+
 .areaheaderimgs {
     position: relative;
     width: 100%;
@@ -67,30 +183,24 @@ body {
     overflow: hidden;
 }
 
-/* Imagem de fundo (faixada) */
+
+/* ---------- Imagem da Faixada ---------- */
+
 .areaheaderimgs .logo-area {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
+    object-fit: cover;
     object-position: center 73%;
 }
+
+
+/* ---------- Área da Logo ---------- */
 
 .logo-area {
     width: 100%;
     height: 140px;
     overflow: hidden;
-}
-
-/* Logo da Câmara sobreposta (primeira imagem) */
-.areaheaderimgs img:first-child {
-    position: absolute;
-    top: 50%;
-    left: 390px;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 254px;
-    height: 120px;
 }
 
 .logo-area .container {
@@ -102,45 +212,65 @@ body {
 .logo-area img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
+    object-fit: cover;
 }
 
-/* ===== BARRA DE NAVEGAÇÃO ===== */
+
+/* ---------- Logo da Câmara Sobreposta ---------- */
+
+.areaheaderimgs img:first-child {
+    position: absolute;
+    top: 50%;
+    left: 390px;
+    width: 254px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+/* =========================================================
+   BARRA DE NAVEGAÇÃO
+========================================================= */
+
 .nav-bar {
     height: 50px;
-    background-color: #9b0e14;
+    background-color: #971419 !important;
     color: white;
-    z-index: 999;
     position: sticky;
     top: 43px;
+    z-index: 999;
 }
 
 .nav-content {
-    height: 100%;
     width: 76%;
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 10px;
 }
 
 .nav-content a {
     color: white;
-    text-decoration: none;
     font-size: 13px;
     font-weight: 500;
+    text-decoration: none;
     white-space: nowrap;
 }
 
-.nav-content a:hover {
-    opacity: 0.8;
-}
+
+/* ---------- Ícone Home ---------- */
 
 .home {
-    font-size: 18px !important;
+    font-size: 11px !important;
 }
 
-/* ===== BANNER PRINCIPAL ===== */
+
+/* =========================================================
+   BANNER PRINCIPAL
+========================================================= */
+
 .banner {
     height: 400px;
     display: flex;
@@ -152,7 +282,11 @@ body {
     color: #24343b;
 }
 
-/* ===== CONTEÚDO PRINCIPAL ===== */
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+========================================================= */
+
 .conteudo {
     width: 1200px;
     max-width: 90%;
@@ -160,11 +294,15 @@ body {
     min-height: 1000px;
 }
 
-.conteúdo h2 {
+.conteudo h2 {
     margin-bottom: 30px;
 }
 
-/* ===== CARDS (NOTÍCIAS) ===== */
+
+/* =========================================================
+   CARDS — NOTÍCIAS
+========================================================= */
+
 .cards {
     height: 250px;
     flex: 1;
@@ -176,4 +314,27 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
+}
+
+
+/* =========================================================
+   PÁGINA DE VEREADORES
+========================================================= */
+
+.breadcrump {
+    padding: 20px 0;
+}
+
+.breadcrump .container {
+    font-size: 13px;
+    color: #555;
+}
+
+.breadcrump a {
+    color: #971419;
+    text-decoration: none;
+}
+
+.filtro-container {
+    padding: 20px 0 40px;
 }

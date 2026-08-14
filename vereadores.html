@@ -39,7 +39,7 @@
         </div>
         <div class="nav-bar">
             <div class="container nav-content">
-                <a href="#" class="home"><i class="fas fa-home"></i></a>
+                <a href="solanea.html" class="home"><i class="fas fa-home"></i></a>
                 <div class="dropdown">
                     <a href="#">INSTITUCIONAL ▾</a>
                     <div class="dropdown-menu">
@@ -105,24 +105,42 @@
                 </div>
             </div>
         </div>
-        <!--CONTEÚDO SÓ PRA TESTAR O SCROLL-->
         <main>
-            <section class="banner">
-                <img src="banneriniciodepagina.png" alt="">
-            </section>
+            <section class="breadcrump">
+                <div class="container">
+                    <h3>vereadores</h3>
+                    <p class="filtro-instrucao">Utilize os campos abaixo para refinar a sua busca</p>
 
-            <section class="conteudo">
-                <h2>Ultimas Noticias</h2>
+                    <div class="filtro-form">
+                        <div class="filtro-campo">
+                            <label for="filtro-nome">Vereador</label>
+                            <input type="text" id="filtro-nome" placeholder="Nome do Vereador">
+                        </div>
 
-                <div class="cards">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                        <div class="filtro-campo">
+                            <label for="filtro-cargo">Cargo</label>
+                            <select id="filtro-cargo">
+                                <option value="">Cargo</option>
+                                <option value="">PRESIDENTE</option>
+                                <option value="">VICE-PRESIDENTE</option>
+                                <option value="">1° SECRETÁRIO</option>
+                                <option value="">2° SECRETÁRIO</option>
+                                <option value="">VEREADOR(a)</option>
+                                <option value="">DIRETOR(a) DA DIVISÃO DE FINANÇAS, TESOURARIA E CONTABILIDADE</option>
+                                <option value="">SECRETÁRIO(a) DA GERAL</option>
+                                <option value="">DIRETORA DA DIVISÃO DE APOIO LEGISLATIVO</option>
+                                <option value="">ASSESSORA DE GABINETE</option>
+                                <option value="">ASSESSOR(a) LEGISLATIVO</option>
+                                <option value="">ASSESSOR JURÍDICO</option>
+                                <option value="">Ouvidor(a)</option>
+                            </select>
+                        </div>
+                        <button id="btn-pesquisar" class="btn-pesquisar">Pesquisar</button>
+                    </div>
+                    <div class="filtro-acoes">
+                        <a href="#">Limpar</a>
+                        <a href="#">Exportar</a>
+                    </div>
                 </div>
             </section>
         </main>
-
-    </header>
-</body>
-
-</html>
