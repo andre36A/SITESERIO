@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="faviconsolanea.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="solaenea.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Cãmara Municipal de Solanêa</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="nome-camara">
+                    <a href="solanea.html">Câmara Municipal de Solanêa</a>
+                </div>
+                <div class="top-links">
+                    <a href="#"><i class="fas fa-circle-info"></i> Transparência</a>
+                    <a href="#"><i class="fas fa-headset"></i> Fale Conosco</a>
+                    <a href="#"><i class="fas fa-headset"></i> Ouvidoria/e-Sic</a>
+                    <a href="#"><i class="fas fa-magnifying-glass"></i> Pesquisa</a>
+                    <a href="#"><i class="fas fa-universal-access"></i> Acessibilidade</a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="areaheaderimgs">
+            <img src="camaradesolanealogo.png" alt="">
+            <img class="logo-area" src="BACKGROUNDFAIXADA.jpg" alt="faixada camera de solanea">
+        </div>
+        <div class="nav-bar">
+            <div class="container nav-content">
+                <a href="#" class="home"><i class="fas fa-home"></i></a>
+                <div class="dropdown">
+                    <a href="#">INSTITUCIONAL ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">SOBRE A CÂMARA</a>
+                        <a href="#">OUVIDORIA</a>
+                        <a href="#">E-SIC</a>
+                        <a href="#">LEI ORGÂNICA</a>
+                        <a href="#">REGIMENTO INTERNO</a>
+                        <a href="#">DICIONÁRIO LEGISLATIVO</a>
+                        <a href="#">PAPEL DO VEREADOR</a>
+                        <a href="#">PAPEL DA CÂMARA</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="vereadores.html">PARLAMENTARES ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">José Porfirío dos Santos</a>
+                        <a href="#">Luis Carlos Dantas</a>
+                        <a href="#">Vanda Rosália da Silva Rodrigues</a>
+                        <a href="#">Francisco de Assis</a>
+                        <a href="#">Edvanildo de Medeiros Santos Júnior</a>
+                        <a href="#">Genival Francisco dos Santos</a>
+                        <a href="#">José Carlos da Silva</a>
+                        <a href="#">Jose Jaelson Matias dos Santos</a>
+                        <a href="#">Josenildo Costa Silva</a>
+                        <a href="#">Maria Patricia Pereira Lima</a>
+                        <a href="#">Pedro Prudencio da Silva</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">LEGISLATIVO ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">PARLAMENTARES</a>
+                        <a href="#">GALERIA DE VEREADORES</a>
+                        <a href="#">MESA DIRETORA</a>
+                        <a href="#">COMISSÕES</a>
+                        <a href="#">SESSÕES</a>
+                        <a href="#">PROPOSIÇÕES E MATÉRIAS</a>
+                        <a href="#">LEGISLATURA</a>
+                    </div>
+                </div>
+                <a class="tran" href="#">TRANSPARÊNCIA</a>
+                <div class="dropdown">
+                    <a href="#">GESTÃO FISCAL ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">PCS - PRESTAÇÃO DE CONTAS DE GESTÃO</a>
+                        <a href="#">RGF - RELATÓRIO DE GESTÃO FISCAL</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">INFORME ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">NOTÍCIAS</a>
+                        <a href="#">VÍDEOS</a>
+                        <a href="#">LINKS ÚTEIS</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">SERVIÇOS ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">CONTRACHEQUE ONLINE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrump">
+            <div class="container">
+                <a href="solanea.html">Início</a> > <span>Vereadores</span>
+            </div>
+        </section>
+
+        <section class="filtro-container">
+            <div class="container">
+                <h3>Vereadores</h3>
+                <p class="filtro-instrucao">Utilize os campos abaixo para refinar sua busca</p>
+
+                <div class="filtro-form">
+                    <div class="filtro-campos">
+                        <div class="filtro-campo">
+                            <label for="filtro-nome">Vereador</label>
+                            <input type="text" id="filtro-nome" placeholder="Nome do vereador">
+                        </div>
+
+                        <div class="filtro-campo">
+                            <label for="filtro-cargo">Cargo</label>
+                            <select id="filtro-cargo">
+                                <option value="" disabled selected hidden>Cargo</option>
+                                <option value="presidente">PRESIDENTE</option>
+                                <option value="vice-presidente">VICE-PRESIDENTE</option>
+                                <option value="1-secretario">1º SECRETÁRIO</option>
+                                <option value="2-secretario">2º SECRETÁRIO</option>
+                                <option value="vereador">VEREADOR(A)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filtro-acoes">
+                        <button id="btn-pesquisar" class="btn-pesquisar">
+                            <i class="fas fa-magnifying-glass"></i> Pesquisar
+                        </button>
+                        <button id="btn-limpar" type="button" class="btn-limpar">
+                            <i class="fas fa-trash"></i> Limpar
+                        </button>
+                        <button id="btn-exportar" type="button" class="btn-exportar">
+                            <i class="fas fa-upload"></i> Exportar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
