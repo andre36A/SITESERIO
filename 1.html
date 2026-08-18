@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="faviconsolanea.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="solaenea.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Câmara Municipal de Solânea</title>
 </head>
 
@@ -67,7 +70,7 @@
                 <a href="vereadores.html">PARLAMENTARES ▾</a>
                 <div class="dropdown-menu">
                     <a href="#">José Porfírio dos Santos</a>
-                    <a href="1.html">Luis Carlos Dantas</a>
+                    <a href="#">Luis Carlos Dantas</a>
                     <a href="#">Vanda Rosália da Silva Rodrigues</a>
                     <a href="#">Francisco de Assis</a>
                     <a href="#">Edvanildo de Medeiros Santos Júnior</a>
@@ -82,6 +85,7 @@
 
             <!-- LEGISLATIVO -->
             <div class="dropdown">
+                <a href="#">LEGISLATIVO ▾</a>
                 <div class="dropdown-menu">
                     <a href="#">PARLAMENTARES</a>
                     <a href="#">GALERIA DE VEREADORES</a>
@@ -122,27 +126,81 @@
                     <a href="#">CONTRACHEQUE ONLINE</a>
                 </div>
             </div>
-
         </div>
     </nav>
 
-    <!-- CONTEÚDO -->
+
+    </div>
     <main>
-        <section class="banner">
-            <img src="banneriniciodepagina.png" alt="Banner da Câmara Municipal de Solânea">
+        <section class="breadcrump">
+            <div class="container">
+                <a href="solanea.html">Início</a>
+                <span>&gt;</span>
+                <a href="vereadores.html">Vereadores</a>
+                <span>&gt;</span>
+                <span>Detalhes</span>
+            </div>
         </section>
+        <section class="perfil-vereador">
+            <div class="container">
+                <div class="perfil-campo">
+                    <img src="carlinhos.jpg" alt="">
+                    <div class="perfil-info">
+                        <h2>Carlinhos <i class="ion-checkmark-circled ml-1" style="color: #27ae45;"></i></h2>
+                        <h3>Luis Carlos Dantas</h3>
+                        <h3>Vice-Presidente - Mesa Diretora</h3>
+                        <h3>Partido: UNIÃO</h3>
+                    </div>
+                    <div class="perfil-linha-baixo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="perfil-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stats-coluna">
+                        <h4>LEGISLATURA ATUAL - 2025-2028</h4>
 
-        <section class="conteudo">
-            <h2>Ultimas Noticias</h2>
+                        <div class="barra-progresso">
+                            <div class="barra-fundo">
+                                <div class="barra-preenchida-laranja" style="width: 14.18%;"></div>
+                            </div>
+                            <p>Quantidade de 39 matérias, representando 14,18% do total das matérias</p>
+                        </div>
+                        <div class="barra-progresso">
+                            <div class="barra-fundo">
+                                <div class="barra-preenchida" style="width: 42.86%;"></div>
+                            </div>
+                            <p>Presente em 18 sessões, representando 42,86%</p>
+                        </div>
+                    </div>
+                    <div class="stats-coluna">
+                        <h4>EXERCÍCIO ATUAL - 2026</h4>
 
-            <div class="cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                        <div class="barra-progresso">
+                            <div class="barra-fundo">
+                                <div class="barra-preenchida-laranja" style="width: 12.16%;"></div>
+                            </div>
+                            <p>Quantidade de 9 matérias, representando 12,16% do total das matérias</p>
+                        </div>
+                        <div class="barra-progresso">
+                            <div class="barra-fundo">
+                                <div class="barra-preenchida" style="width: 41.67%;"></div>
+                            </div>
+                            <p>Presente em 5 sessões, representando 41,67%</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="stats-extra">Quantidade de matérias subscritas pelo vereador: 1</p>
+                <p class="stats-atualizado"><i class="fas fa-clock"></i> Dados atualizados em: 26/05/2026</p>
+            </div>
+        </section>
+        <section class="perfil-tabs">
+            <div class="container">
+                <div clas="tabs-botoes">
+                    
+                </div>
             </div>
         </section>
     </main>
-
-</body>
-
-</html>
