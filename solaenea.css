@@ -580,6 +580,10 @@ body {
     color: #555;
 }
 
+/* =========================================================
+    PERFIL DO VEREADOR
+========================================================= */
+
 .perfil-campo {
     background-color: white;
     padding: 20px;
@@ -588,6 +592,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+    /* Permite que a linha inferior ocupe uma nova linha dentro do card. */
     flex-wrap: wrap;
 }
 
@@ -623,6 +628,7 @@ body {
     border: 7px solid #f5f6fa;
 }
 
+/* Linha visual que separa o perfil das informações seguintes. */
 .perfil-linha-baixo {
     padding: 10px;
     border-top: 2px solid rgba(36, 52, 59, 0.2);
@@ -632,6 +638,10 @@ body {
     width: calc(100% + 90px);
     order: 3;
 }
+
+/* =========================================================
+    BLOCO DE DADOS COMPLEMENTARES
+========================================================= */
 
 .dados-campo {
     background-color: white;
@@ -644,6 +654,29 @@ body {
     flex-wrap: wrap;
     margin-top: 20px;
 }
+
+/* =========================================================
+    MAPA ACIMA DO RODAPÉ
+========================================================= */
+
+.mapa-footer {
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+/* O iframe ocupa todo o banner sem criar bordas extras. */
+.mapa-footer iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* =========================================================
+    ESTATÍSTICAS DO VEREADOR
+========================================================= */
 
 .perfil-stats {
     margin-top: 20px;
@@ -673,6 +706,7 @@ body {
     margin-bottom: 15px;
 }
 
+/* Fundo fixo da barra; o preenchimento interno define o percentual. */
 .barra-fundo {
     width: 100%;
     height: 8px;
@@ -716,4 +750,344 @@ body {
 
 .stats-atualizado i {
     margin-right: 5px;
+}
+
+/* =========================================================
+    ABAS DO PERFIL
+========================================================= */
+
+.perfil-tabs {
+    margin-top: 20px;
+}
+
+.tabs-botoes {
+    display: flex;
+    gap: 5px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background-color: #971419;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* A aba ativa usa a cor institucional para indicar a seleção atual. */
+.tab-btn.ativo {
+    background-color: #971419;
+    color: #fff;
+    font-weight: 700;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Área compartilhada por todos os painéis das abas. */
+.tabs-conteudo {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+}
+
+/* Apenas o painel com a classe .ativo fica visível. */
+.painel {
+    display: none;
+}
+
+.painel.ativo {
+    display: block;
+}
+
+.materia-container {
+    position: relative;
+    min-height: 60px;
+    background-color: white;
+    border: 1px solid #dfe4ee;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 8px 125px 8px 14px;
+}
+
+.materia-container + .materia-container {
+    margin-top: 8px;
+}
+
+.materia-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 18px;
+    background-color: #18a873;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.painel#producao .materia-container h5 {
+    margin: 0 0 4px;
+    color: #24343b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.painel#producao .materia-container p {
+    margin: 0 0 3px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.painel#producao .materia-container p:last-of-type {
+    margin-bottom: 0;
+}
+
+.painel#producao .materia-container p span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.painel#producao .materia-container .data {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.materia-container .btn-materia {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #971419;
+    color: white;
+    border: none;
+    padding: 6px 9px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.painel h5 {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.painel#comissões {
+    position: relative;
+}
+
+.painel#comissões .btn-comissao {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.painel#comissões p {
+    margin-bottom: 2px;
+    color: #3f3e50 !important;
+    font-weight: 800
+}
+
+.painel#comissões span {
+    font-weight: 100;
+}
+
+.painel#comissões button {
+    background-color: #971419;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.painel p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+/* Justifica somente a biografia para nivelar visualmente as linhas. */
+.painel#biografia p {
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.painel#filiacao h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #18345d;
+    margin-bottom: 8px;
+}
+
+/* =========================================================
+   GRÁFICOS DO VEREADOR
+========================================================= */
+
+.grafico-barras {
+    margin-top: 20px;
+}
+
+.grafico-barras .container {
+    min-height: 90px;
+    background-color: white;
+    border: 1px solid #dfe4ee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.grafico-barras .container+.container {
+    margin-top: 20px;
+}
+
+.grafico-barras h5 {
+    padding: 14px 12px;
+    border-bottom: 1px solid #dfe4ee;
+    color: #18345d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================================================
+    TABELA DE MANDATOS
+========================================================= */
+
+.mandatos-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 12px;
+    color: #18345d;
+}
+
+.painel#mandatos h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #18345d;
+    margin-bottom: 8px;
+}
+
+.mandatos-header {
+    background-color: #f5f5f9;
+    color: #263957;
+}
+
+.mandatos-th,
+.mandatos-td {
+    border: 1px solid #d9dfed;
+    padding: 7px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.mandatos-th {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.mandatos-td {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.mandatos-th:first-child,
+.mandatos-td:first-child {
+    width: 16%;
+}
+
+.mandatos-th:nth-child(2),
+.mandatos-td:nth-child(2) {
+    width: 22%;
+}
+
+.mandatos-th:nth-child(3),
+.mandatos-td:nth-child(3) {
+    width: 37%;
+}
+
+.mandatos-th:nth-child(4),
+.mandatos-td:nth-child(4) {
+    width: 25%;
+}
+
+/* =========================================================
+    TABELA DE FILIAÇÃO PARTIDÁRIA
+========================================================= */
+
+.filiacao-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 12px;
+    color: #18345d;
+}
+
+.filiacao-header {
+    background-color: #f5f5f9;
+    color: #263957;
+}
+
+.filiacao-th,
+.filiacao-td {
+    border: 1px solid #d9dfed;
+    padding: 9px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.filiacao-th {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.filiacao-td {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.filiacao-th:first-child,
+.filiacao-td:first-child {
+    width: 33%;
+}
+
+.filiacao-th:nth-child(2),
+.filiacao-td:nth-child(2) {
+    width: 22%;
+}
+
+/* =========================================================
+    TABELA DE FILIAÇÃO PARTIDÁRIA
+========================================================= */
+
+
+/* =========================================================
+    RODAPÉ
+========================================================= */
+
+.footer {
+    background-color: #971419;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 0;
 }
