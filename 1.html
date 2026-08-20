@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="solaenea.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Câmara Municipal de Solânea</title>
 </head>
 
@@ -70,7 +71,7 @@
                 <a href="vereadores.html">PARLAMENTARES ▾</a>
                 <div class="dropdown-menu">
                     <a href="#">José Porfírio dos Santos</a>
-                    <a href="#">Luis Carlos Dantas</a>
+                    <a href="1.html">Luis Carlos Dantas</a>
                     <a href="#">Vanda Rosália da Silva Rodrigues</a>
                     <a href="#">Francisco de Assis</a>
                     <a href="#">Edvanildo de Medeiros Santos Júnior</a>
@@ -88,7 +89,7 @@
                 <a href="#">LEGISLATIVO ▾</a>
                 <div class="dropdown-menu">
                     <a href="#">PARLAMENTARES</a>
-                    <a href="#">GALERIA DE VEREADORES</a>
+                    <a href="vereadores.html">GALERIA DE VEREADORES</a>
                     <a href="#">MESA DIRETORA</a>
                     <a href="#">COMISSÕES</a>
                     <a href="#">SESSÕES</a>
@@ -220,11 +221,12 @@
                 </div>
                 <div class="tabs-conteudo">
                     <div class="painel ativo" id="producao">
-                        <h5>ÚLtimas Matérias Vinculadas</h5>
+                        <h5>Últimas Matérias Vinculadas</h5>
                         <div class="materia-container">
                             <h5>REQUERIMENTO - PARA O EXECUTIVO - 046/2026 <i class="fas fa-calendar"></i><span
                                     class="data"> 26/05/2026 </span></h5>
-                            <p>Requerimento nº 046/2026, do vereador Luís Carlos Dantas: solicita ao prefeito municipal a
+                            <p>Requerimento nº 046/2026, do vereador Luís Carlos Dantas: solicita ao prefeito municipal
+                                a
                                 regulamentação e sinalização de pontos de parada para transportes alternativos em locais
                                 específicos do município, especialmente na Rua Alfredo Pessoa de Lima, para os destinos
                                 Campina Grande e Cacimba de Dentro; na Rua São José, para o destino Casserengue; e na
@@ -234,69 +236,169 @@
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>REQUERIMENTO - PARA O EXECUTIVO - 045/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 26/05/2026 </span></h5>
+                            <p>Requerimento nº 045/2026, do vereador Luís Carlos Dantas: solicita ao prefeito municipal
+                                a
+                                instalação de tachões redutores de velocidade no cruzamento das ruas José Amâncio
+                                Ramalho e Cândido de Souza;</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                REQUERIMENTO - PARA O EXECUTIVO - 044/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 26/05/2026 </span>
+                            </h5>
+                            <p>Requerimento nº 044/2026, do vereador Luís Carlos Dantas: solicita ao prefeito municipal
+                                a
+                                reforma do teto do Ginásio de Esportes Adauto Silva;</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                REQUERIMENTO - PARA O EXECUTIVO - 043/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 26/05/2026 </span>
+                            </h5>
+                            <p>Requerimento nº 043/2026, do vereador Luís Carlos Dantas: solicita ao prefeito municipal
+                                realização de oficinas com temática voltada para primeiros socorros;</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                REQUERIMENTO - PARA O EXECUTIVO - 042/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 26/05/2026 </span>
+                            </h5>
+                            <p>Requerimento nº 042/2026, do vereador Luís Carlos Dantas: solicita ao prefeito municipal
+                                instalação de lixeiras comuns e lixeiras para coleta seletiva em pontos estratégicos do
+                                município, especialmente nas vias públicas, praças, áreas de maior circulação e demais
+                                espaços de uso coletivo;</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                PROJETO DE LEI - LEGISLATIVO - 011/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 26/05/2026 </span>
+                            </h5>
+                            <p>Projeto de Lei nº 11/2026, do vereador Luís Carlos Dantas: Denomina logradouros públicos
+                                do
+                                Loteamento Nossa Senhora da Boa Vista I e II;</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                REQUERIMENTO - PARA O EXECUTIVO - 025/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 26/05/2026 </span>
+                            </h5>
+                            <p>Requerimento nº 025/2026, do vereador José Jaelson Matias, subscrito pelos demais
+                                vereadores: solicita ao prefeito municipal a elaboração e envio à câmara de projeto de
+                                lei instituindo o Conselho Municipal de Proteção e Bem-estar Animal no âmbito do
+                                município de Solânea.</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                REQUERIMENTO - PARA O EXECUTIVO - 015/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 07/04/2026 </span>
+                            </h5>
+                            <p>Requerimento nº 015/2026, do vereador Luís Carlos Dantas: solicita à gestão municipal “a
+                                criação de um novo abrigo para idosos no município”.</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                REQUERIMENTO - PARA O EXECUTIVO - 014/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 24/03/2026 </span>
+                            </h5>
+                            <p>Requerimento nº 014/2026, do vereador Luís Carlos Dantas: solicita à gestão municipal a
+                                “identificação e planejamento das melhorias de acessibilidade em prédios e espaços
+                                públicos do município”</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
                         <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
+                            <h5>
+                                REQUERIMENTO - PARA O EXECUTIVO - 013/2026 <i class="fas fa-calendar"></i><span
+                                    class="data"> 24/03/2026 </span>
+                            </h5>
+                            <p>Requerimento nº 013/2026, do vereador Luís Carlos Dantas: solicita à gestão municipal a
+                                “articulação entre as secretarias para execução de calendário educativo intersetorial na
+                                rede
+                                municipal”;</p>
                             <p><span>Situação: </span>Aprovado</p>
                             <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
                         </div>
-                        <div class="materia-container">
-                            <h5>Título da matéria</h5>
-                            <p>Descrição da matéria.</p>
-                            <p><span>Situação: </span>Aprovado</p>
-                            <button class="btn-materia"><i class="fas fa-eye"></i> Acessar</button>
-                        </div>
+                        <button class="btn-todas-materias">Mais matérias vinculadas a esse vereador(a)</button>
                     </div>
                     <div class="painel" id="sessoes">
-                        <h5>Sessões</h5>
-                        <p>Conteúdo da aba Sessões.</p>
+                        <h5>Sessões Presentes</h5>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 11/2026 <i class="fas fa-calendar"></i><span class="data"> 26/05/2026
+                                </span></h5>
+                            <p>11ª (Décima Primeira) Sessão Ordinária de 26 de Maio de 2026</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 10/2026 <i class="fas fa-calendar"></i><span class="data"> 19/05/2026
+                                </span></h5>
+                            <p>10ª (Décima) Sessão Ordinária de 19 de Maio de 2026.</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 09/2026 <i class="fas fa-calendar"></i><span class="data"> 12/05/2026
+                                </span></h5>
+                            <p>09ª (Nona) Sessão Ordinária de 12 de Maio de 2026</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 02/2026 <i class="fas fa-calendar"></i><span class="data"> 17/03/2026
+                                </span></h5>
+                            <p>02ª (Segunda) Sessão Ordinária de 17 de Março de 2026.</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 01/2026 <i class="fas fa-calendar"></i><span class="data"> 10/03/2026
+                                </span></h5>
+                            <p>01ª (Primeira) Sessão Solene de 10 de Março de 2026.</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 24/2025 <i class="fas fa-calendar"></i><span class="data"> 04/11/2025
+                                </span></h5>
+                            <p>24ª (Vigésima Quarta) Sessão Ordinária de 4 de Novembro de 2025</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 21/2025 <i class="fas fa-calendar"></i><span class="data"> 07/10/2025
+                                </span></h5>
+                            <p>21ª (Vigésima Primeira) Sessão Ordinária de 7 de Outubro de 2025</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 20/2025 <i class="fas fa-calendar"></i><span class="data"> 30/09/2025
+                                </span></h5>
+                            <p>20ª (Vigésima) Sessão Ordinária de 30 de Setembro de 2025</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 19/2025 <i class="fas fa-calendar"></i><span class="data"> 23/09/2025
+                                </span></h5>
+                            <p>19ª (Décima Nona) Sessão Ordinária de 23 de Setembro de 2025</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <div class="sessao-container">
+                            <h5>SESSÃO ORDINÁRIA: 18/2025 <i class="fas fa-calendar"></i><span class="data"> 16/09/2025
+                                </span></h5>
+                            <p>18ª (Décima Oitava) Sessão Ordinária de 16 de Setembro de 2025</p>
+                            <button class="btn-sessao"><i class="fas fa-eye"></i> Acessar</button>
+                        </div>
+                        <button class="btn-sessao">Todas as sessões</button>
                     </div>
                     <div class="painel" id="comissões">
                         <h5>Comisssões</h5>
@@ -378,9 +480,23 @@
         <section class="grafico-barras">
             <div class="container">
                 <h5>Matérias (Quantidade)</h5>
+                <div class="grafico-area">
+                    <canvas id="graficoQuantidade"></canvas>
+                    <!-- Conteúdo do gráfico de barras -->
+                    <p>Produzimos no total de 40 proposições e matérias, sendo Moção de Aplausos e Reconhecimento = 1,
+                        Projeto de Decreto Legislativo = 1, Projeto de Lei - Legislativo = 3 e Requerimento - Para O
+                        Executivo = 35 conforme o gráfico acima.</p>
+                </div>
             </div>
             <div class="container">
                 <h5>Matérias (Percentual)</h5>
+                <div class="grafico-area">
+                    <canvas id="graficoPercentual"></canvas>
+                    <!-- Conteúdo do gráfico de barras -->
+                    <p>Observamos que Moção de Aplausos e Reconhecimento representa 2,5%, Projeto de Decreto Legislativo
+                        representa 2,5%, Projeto de Lei - Legislativo representa 7,5%, e Requerimento - Para O Executivo
+                        representa 87,5% do total de matérias proposições.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -391,7 +507,14 @@
             title="Mapa da Câmara Municipal de Solânea"></iframe>
     </section>
     <footer class="footer">
-        <p>&copy; 2023 Vereadores de Solânea. Todos os direitos reservados.</p>
+        <div class="footer-institucional">
+            <img src="camaradesolanealogo.png" alt="Logo da Câmara Municipal de Solânea">
+            <div><span>Legislatura 2025/2028</span><span>Presidente José Porfírio</span></div>
+            <div><span>CNPJ: 08.584.377/0001-47</span><span>Rua Governador João Fernandes de Lima, S/N - Centro</span><span>De Segunda à Sexta Das 08:00hs às 12:00hs</span></div>
+            <div><span>(83) 9 8754-4168</span><span>cmsolpb@gmail.com</span></div>
+        </div>
+        <div class="footer-social"><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        <p>&copy; 2026 <strong>Ms Soluções</strong>. Todos os direitos reservados.</p>
     </footer>
     <script src="solanea.js"></script>
 </body>
